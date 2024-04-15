@@ -4,34 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" href="./images/icon todo list.png">
 </head>
 
 <body>
 
     <body>
 
-        <input type="color" id="colorPicker">
-        <hr>
-        <div>
-            <input type="text" placeholder="search Todo" id="searchInput">
-        </div>
-        <br>
-        <form id="addTodoForm">
-            <input type="text" placeholder="Your Todo" id="todoInput">
-            <button>Create Todo</button>
-        </form>
+        <section id="allInfo">
+            <div id="choose">
+                <input type="color" id="colorPicker">
+                <p>Choose your soul mood</p>
+            </div>
 
-        <ul id="todoList">
+            <div>
+                <input type="text" placeholder="Search Todo" id="searchInput">
+            </div>
+            <form id="addTodoForm">
+                <input type="text" placeholder="Your Todo" id="todoInput">
+                <button>Create Todo</button>
+            </form>
 
-        </ul>
-        <section>
-            <button class="showButton" data-key="doneTodo">Done</button>
-            <button class="showButton" data-key="crossTodo">Cross</button>
+            <ul id="todoList">
+
+            </ul>
+            <section id="allBtn">
+                <button class="showButton" data-key="doneTodo">Done</button>
+                <button class="showButton" data-key="crossTodo">Cross</button>
+            </section>
+            <ul id="doneList">
+
+            </ul>
         </section>
-        <ul id="doneList">
-
-        </ul>
         <script src="./script/index.js" type="module"></script>
     </body>
 

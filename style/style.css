@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+.done {
+  text-decoration: line-through;
+  color: green;
+}
+#allInfo {
+  padding-block: 10px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 800px;
+  box-shadow: 5px 4px 5px #efe8e8;
+  border-color: rgba(255, 255, 255, 0.37);
+  background: rgba(255, 255, 255, 0.27);
+}
+#allInfo input {
+  outline: none;
+  height: 30px;
+  border-radius: 4px;
+}
+#allInfo button {
+  height: 30px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+}
+#allInfo button:hover {
+  background-color: #413636;
+  color: beige;
+}
+#allInfo #choose {
+  display: flex;
+  gap: 10px;
+}
+#allInfo #choose input {
+  border-radius: 3px;
+  cursor: pointer;
+  height: 40px;
+}
+#allInfo #choose p {
+  font-size: 30px;
+  background: linear-gradient(60deg, #E21143, #FFB03A);
+  background-clip: text;
+  color: transparent;
+}
+#allInfo #choose #allBtn {
+  display: flex;
+  gap: 50px;
+}

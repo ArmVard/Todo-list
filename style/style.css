@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   font-family: "Courier New", Courier, monospace;
+  border: none;
 }
 .done {
   text-decoration: line-through;
@@ -18,6 +19,7 @@
   box-shadow: 5px 4px 5px #efe8e8;
   border-color: rgba(255, 255, 255, 0.37);
   background: rgba(255, 255, 255, 0.27);
+  gap: 5px;
 }
 #allInfo input {
   outline: none;
@@ -53,4 +55,8 @@
 #allInfo #choose #allBtn {
   display: flex;
   gap: 50px;
+}
+#allInfo #doneList {
+  list-style: none;
+  font-size: 20px;
 }

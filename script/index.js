@@ -1,5 +1,5 @@
 import { createListener } from "./helpers.js";
-import { taskList, todoListContainer, searchInput, done, cross } from "./constants.js";
+import { taskList, todoListContainer, searchInput } from "./constants.js";
 
 
 createListener('colorPicker', 'input', (e) => {
@@ -89,17 +89,17 @@ function renderList(listData = taskList) {
 
 
 const showButtons = document.querySelectorAll('.showButton');
-showButtons.forEach(button => {
+
+const showButton = document.querySelectorAll('.showButton');
+showButton.forEach(button => {
     button.addEventListener('click', (e) => {
         const { key } = e.target.dataset;
         if (key === 'doneTodo') {
+            todoListContainer.innerHTML = ''
             const completedTasks = taskList.filter(task => task.isDone === true);
             renderCompletedTasks(completedTasks);
-        } else if (key === 'crossTodo') {
-            const completedTasks = taskList.filter(task => task.isDone === false);
-            renderCompletedTasks(completedTasks);
-
         }
+
     });
 });
 
